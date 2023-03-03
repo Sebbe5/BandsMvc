@@ -2,7 +2,7 @@
 
 namespace BandsMvc.Controllers
 {
-    public class BandController : Controller
+    public class BandsController : Controller
     {
         public IActionResult Index()
         {
