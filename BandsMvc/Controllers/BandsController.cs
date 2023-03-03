@@ -12,7 +12,7 @@ namespace BandsMvc.Controllers
         public IActionResult Index()
         {
             Band[] model = dataService.GetAllBands();
-            return View();
+            return View(model);
         }
     }
 }
