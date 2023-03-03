@@ -14,7 +14,7 @@ namespace Acme.Models
 
         public Band[] GetAllBands()
         {
-            return bands.OrderBy(x => x.Id).ToArray();
+            return bands.ToArray();
         }
 
     }
