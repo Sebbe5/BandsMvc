@@ -12,7 +12,7 @@
         <ul>
             @foreach (var item in Model)
             {
-                <li> Id: @item.Id. Band: @item.Name. Description: @item.Description</li>
+                <li> Id: @item.Id. Band: @item.Name. Description: @item.Description <a href="details/@item.Id">Länk till bandet</a></li>
             }
 
         </ul>

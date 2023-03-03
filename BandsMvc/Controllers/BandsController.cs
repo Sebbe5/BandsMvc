@@ -16,11 +16,10 @@ namespace BandsMvc.Controllers
         }
 
         [HttpGet("details/{id}")]
-        [HttpGet("details/{id}")]
-        [HttpGet("details/{id}")]
         public IActionResult Details(int id)
         {
-            return View();
+            Band[] model = dataService.GetAllBands();
+            return View(model.FirstOrDefault(b => b.Id == id));
         }
     }
 }
